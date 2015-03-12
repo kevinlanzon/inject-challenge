@@ -30,4 +30,11 @@ describe "The inject method" do
     end
   end
 
+   context "Adding a string together" do
+
+    it "returns MyInject for array My Inject" do
+      expect(["My", "Inject"].my_inject{ |a, b| a + b }).to eq "MyInject"
+    end
+  end
+
 end
